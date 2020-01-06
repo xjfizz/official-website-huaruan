@@ -56,7 +56,7 @@
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                  <button @click="submit()" class="btn btn-default btn-block">
+                  <button @click.prevent="submit()" class="btn btn-default btn-block">
                     提交
                   </button>
                 </div>
@@ -111,7 +111,12 @@ export default {
       API.message.addMessage(params).then(res => {
         if (res.code == 200) {
           this.$message.success('提交成功')
-          this.$router.push({path: '/home'})
+          setTimeout(() => {
+            this.$router.push({path: '/home'})
+          },500)
+          
+        } else {
+           this.$message.warning(res.message)
         }
       });
     }

@@ -10,7 +10,7 @@
   <div id="footer" class="container-fluid">
     <div class="logo">
       <!-- <img src="@/assets/img/logo_white.png" alt="logo图"> -->
-       <img height="60px" width="60px" src="@/assets/img/huaruan-company.jpg" alt="logo图">
+       <img height="90px" width="90px" src="@/assets/img/huaruan-company.jpg" alt="logo图">
     </div>
     <p class="title">江苏华软智能信息科技有限公司</p>
     <p class="address_tel_fax">
@@ -43,9 +43,9 @@ export default {
   text-align: center;
 }
 .logo {
-  width: 95px;
-  height: 45px;
-  margin: 50px auto 20px;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto 20px;
 }
 .title {
   font-size: 25px;
