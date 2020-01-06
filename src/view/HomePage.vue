@@ -672,6 +672,12 @@ export default {
         -webkit-transform: scale3d(0.9, 0.9, 0.9);
     }
  }
+ .swiper-button-prev{
+   left: 0px;
+ }
+  .swiper-button-next{
+   right: 0px;
+ }
 
 
 

@@ -11,14 +11,14 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
+      '/api/huaruan': {
         // target: 'http://192.168.1.153:8080/', //开发环境
          //target: 'http://192.168.1.179:8888/xujun/', // 正式环境
          target: 'http://192.168.1.104:8080/', //齐群
         changeOrigin: false,
          ws: false,
         pathRewrite: {
-            '/api': ''
+            '/api/huaruan': ''
           }
        },
     },
