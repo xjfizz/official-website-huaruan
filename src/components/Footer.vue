@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-01-03 17:55:02
- * @LastEditTime : 2020-01-06 10:24:04
+ * @LastEditTime : 2020-01-08 09:29:41
  * @LastEditors  : Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \official-website-huaruan\src\components\Footer.vue
@@ -15,11 +15,11 @@
     <p class="title">江苏华软智能信息科技有限公司</p>
     <p class="address_tel_fax">
       <span>地址：江苏省苏州市吴江区启迪信息科技园一楼</span>
-      <span>Tel：15599060285</span>
+      <span>Tel：13033737173</span>
       <!-- <span>Fax：8888-88888888</span> -->
     </p>
     <p class="email_wx">
-      <span>邮箱：liyunkun_11@163.com</span>
+      <span>邮箱：760843236@qq.com</span>
       <span>公司微信号：ilyk_gg</span>
     </p>
     <p class="copy">Copyright &copy; 2018 - 2019 江苏华软智能信息科技有限公司</p>

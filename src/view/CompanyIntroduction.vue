@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-01-02 09:15:59
- * @LastEditTime : 2020-01-02 10:41:58
+ * @LastEditTime : 2020-01-07 15:37:43
  * @LastEditors  : Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \official-website-master\src\view\CompanyIntroduction.vue
@@ -16,11 +16,11 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <h3>江苏华软智能信息科技有限公司</h3>
-                    <p class=".text-justify">苏州华软智能科技有限公司位于苏州吴江经济开发区五方路，是一家以软件开发为主的高科技民营公司。</p>
+                    <p class=".text-justify"></p>江苏华软智能科技有限公司位于苏州吴江经济开发区五方路，是一家以软件开发为主的高科技民营公司。</p>
                     <p class=".text-justify">公司主要经营网络科技，自成立以来一直从事软件应用开发等相关产业。</p>
-                    <p class=".text-justify">苏州华软智能科技有限公司主要经营范围包括：计算机硬件领域内的技术开发、技术咨询、技术转让、技术服务。</p>
+                    <p class=".text-justify">江苏华软智能科技有限公司主要经营范围包括：计算机硬件领域内的技术开发、技术咨询、技术转让、技术服务。</p>
                     <p class=".text-justify">销售计算机软硬件一级为外部设备、电子产品、自动化系统、通讯设备。</p>
-                     <p class=".text-justify">此外，苏州华软智能科技有限公司现阶段已软件定制为主，推广运营为辅，主要涉及APP开发、微信开发，企业级管理系统开发等。</p>
+                     <p class=".text-justify">此外，江苏华软智能科技有限公司现阶段已软件定制为主，推广运营为辅，主要涉及APP开发、微信开发，企业级管理系统开发等。</p>
                 </div>
             </div>
         </div>

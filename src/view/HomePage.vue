@@ -17,8 +17,8 @@
         <div class="swiper-pagination"></div>
 
         <!-- 如果需要导航按钮 -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev btn_sty_left"></div>
+        <div class="swiper-button-next btn_sty_right"></div>
       </div>
     </div>
     <!-- 大数据管理系统 -->
@@ -29,11 +29,11 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <h2 class="bigData-title">
-           苏州华软智能科技有限公司
+           江苏华软智能科技有限公司
             <small>/ Huaruan</small>
           </h2>
           <p>人才是公司价值的创造者，是企业核心竞争力的重要构成要素，是公司实现可持续发展的重要保障。华软的人才理念是“尊重、成长、实现。</p>
-          <p>苏州华软智能科技有限公司成立以来发展迅速，业务不断发展壮大我公司主要经营信息技术，我们有好的产品和专业的销售和技术团队，我公司属于苏州网络科技、计算机服务和软件行业，如果您对我公司的产品服务有兴趣，期待您在线留言或者来电咨询</p>
+          <p>江苏华软智能科技有限公司成立以来发展迅速，业务不断发展壮大我公司主要经营信息技术，我们有好的产品和专业的销售和技术团队，我公司属于苏州网络科技、计算机服务和软件行业，如果您对我公司的产品服务有兴趣，期待您在线留言或者来电咨询</p>
           <h2 class="bigData-device">PC/PAD/Phone &nbsp; 全设备支持</h2>
           <a @click="goAbout()" class="btn btn-lg btn-block btn-info">联系我们</a>
         </div>
@@ -46,7 +46,7 @@
         <h3>7x24小时提供出色的IT服务</h3>
         <button
           @click="goAbout()"
-          class="btn btn-default btn-sm"
+          class="btn btn-default btn-sm btn_sty"
           onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#3f3f3f';"
           onmouseenter="this.style.backgroundColor='transparent'; this.style.borderColor='#ffffff'; this.style.color='#ffffff';"
         >联系我们</button>
@@ -81,8 +81,8 @@
             </div>
           </div>
           <!-- 如果需要导航按钮 -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev btn_sty_left_color"></div>
+          <div class="swiper-button-next btn_sty_right_color"></div>
         </div>
         <div class="row visible-xs customer-block">
           <div class="col-xs-12" v-for="(item,index) in customerList" :key="index">
@@ -117,7 +117,7 @@
           >
             <div
               class="server-block wow slideInUp"
-              onmouseenter="this.style.color='#28f';this.style.borderColor='#28f'"
+              onmouseenter="this.style.color='#6D45FD';this.style.borderColor='#6D45FD'"
               onmouseleave="this.style.color='#666';this.style.borderColor='#ccc'"
             >
               <img class="center-block" :src="item.logo" alt="logo">
@@ -125,7 +125,7 @@
               <div
                 class="text-center"
                 v-html="item.content"
-                onmouseenter="this.style.color='#28f'"
+                onmouseenter="this.style.color='#6D45FD'"
                 onmouseleave="this.style.color='#ccc'"
               ></div>
             </div>
@@ -397,7 +397,8 @@ export default {
   width: 100%;
   height: 100%;
   color: #fff;
-  background: rgba(51, 51, 51, 0.534);
+  /* background: rgba(51, 51, 51, 0.534); */
+  /* background: rgba(51, 51, 51, 0); */
   text-align: center;
   line-height: 80px;
 }
@@ -673,10 +674,39 @@ export default {
     }
  }
  .swiper-button-prev{
-   left: 0px;
+   left: 2px;
+ 
+   
  }
   .swiper-button-next{
-   right: 0px;
+   right: 2px;
+   color: #ffffff;
+ }
+ .btn_sty_left{
+   color: #ffffff;
+   background-image: url("../assets/img/left.png")!important;
+   /* background-size:40px 50px; */
+ }
+ .btn_sty_right{
+   color: #ffffff;
+   background-image: url("../assets/img/right.png")!important;
+   /* background-size:40px 50px; */
+ }
+  .btn_sty_left_color{
+   color: #ffffff;
+   background-image: url("../assets/img/left_color.png")!important;
+   /* background-size:50px 70px; */
+ }
+   .btn_sty_right_color{
+   color: #ffffff;
+   background-image: url("../assets/img/right_color.png")!important;
+   /* background-size:50px 70px; */
+ }
+ .btn-info{
+    background-color: #716af5!important;
+ }
+  .btn-info:hover{
+    background-color: #6858fd!important;
  }
 
 

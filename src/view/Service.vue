@@ -43,13 +43,13 @@ export default {
                     img: require('@/assets/img/service2.jpg')
                 },{
                     id: 'section-3',
-                    title: 'C/S',
-                    eng_title: 'Client/Server',
+                    title: '微信开发',
+                    eng_title: 'WeChat development',
                     img: require('@/assets/img/service3.jpg')
                 },{
                     id: 'section-4',
-                    title: 'HTML5&CSS3',
-                    eng_title: 'HTML5/CSS3',
+                    title: '人工智能',
+                    eng_title: 'Artificial intelligence',
                     img: require('@/assets/img/service4.jpg')
                 }
             ]

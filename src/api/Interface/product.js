@@ -10,7 +10,7 @@ const product = {
     return request({
       url:  common_api + '/product',
       method: 'get',
-      params: params
+      params: params,
     })
   },
   getProductById: function(params) {

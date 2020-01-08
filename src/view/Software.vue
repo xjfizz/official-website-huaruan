@@ -6,7 +6,7 @@
           <p>软件产品</p>
           <li v-for="(item, index) in softwareList" :key="index">
             
-            <router-link :to="item.path">{{ item.name }}</router-link>
+            <router-link class="router_sty" :to="item.path">{{ item.name }}</router-link>
           </li>
         </ul>
       </div>
@@ -94,7 +94,7 @@ export default {
   text-decoration: none;
 }
 .left-container > li:hover {
-  background: #928989;
+  background: #ccc;
 }
 #right {
   padding: 50px 0;
@@ -103,5 +103,8 @@ export default {
   #right {
     padding: 15px;
   }
+}
+.router_sty{
+  color:#6d45fd;
 }
 </style>

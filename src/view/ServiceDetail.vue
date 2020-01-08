@@ -46,11 +46,11 @@ export default {
         },
         {
           id: "section-3",
-          title: "C/S"
+          title: "微信开发"
         },
         {
           id: "section-4",
-          title: "HTML5&CSS3"
+          title: "人工智能"
         }
       ],
       serviceContentList: [
@@ -66,21 +66,21 @@ export default {
           title: "APP开发",
           eng_title: "APP development",
           content:
-            "<h3>主要方向</h3><p>借力于移动开发团队，可以使您的系统可覆盖全球95%以上的手机用户，彻底融入用户生活中。</p>"
+            "<h3>主要方向</h3><p>借力于移动开发团队，包括android/ios,涉及领域包括企业级app、商城、物流等，可以使您的系统可覆盖全球95%以上的手机用户，彻底融入用户生活中。</p>"
         },
         {
           id: "section-3",
-          title: "C/S",
-          eng_title: "Client/Server",
+          title: "微信开发",
+          eng_title: "WeChat development",
           content:
-            "<h3>主要方向</h3><p>搭建基于C/S传统的Window窗体程序。</p>"
+            "<h3>主要方向</h3><p>致力于微信小程序和微信公众号开发，包括为微信公众号进行业务开发，为移动应用、PC端网站、公众号第三方平台（为各行各业公众号运营者提供服务）的开发</p>"
         },
         {
           id: "section-4",
-          title: "HTML5&CSS3",
-          eng_title: "HTML5/CSS3",
+          title: "人工智能",
+          eng_title: "Artificial intelligence",
           content:
-            "<h3>主要方向</h3><p>使用最新的页面技术，无需下载，无需安装；即可享受到和客户端软件一样的体验。</p>"
+            "<h3>主要方向</h3><p>人工智能是研究使计算机来模拟人的某些思维过程和智能行为（如学习、推理、思考、规划等）的学科，主要包括计算机实现智能的原理、制造类似于人脑智能的计算机，使计算机能实现更高层次的应用。</p>"
         }
       ]
     };

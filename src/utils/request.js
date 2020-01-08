@@ -6,7 +6,7 @@ import axios from 'axios'
 const service = axios.create({
   // baseURL: api.base_api, // url = base url + request url
   withCredentials: true, // send cookies when cross-domain requests
-  timeout: 20000 // request timeout
+  timeout: 20000, // request timeout
 })
 
 // request拦截器 request interceptor

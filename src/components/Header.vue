@@ -5,8 +5,8 @@
     <div class="header-top container-fuild hidden-xs">
       <div class="container">
         <div class="server pull-left">
-          <span class="glyphicon glyphicon-earphone"></span>15599060285
-          <span class="glyphicon glyphicon-envelope"></span>liyunkun_11@163.com
+          <span class="glyphicon glyphicon-earphone"></span>13033737173
+          <span class="glyphicon glyphicon-envelope"></span>760843236@qq.com
           <span class="glyphicon glyphicon-time"></span>7x24小时为您服务
         </div>
         <div class="shejiao pull-right">
@@ -36,7 +36,8 @@
           </router-link>
           <dl v-if="item.children.length>0">
             <dt v-for="(i,n) in item.children" :key="n">
-              <router-link :to="i.path">{{i.name}}</router-link>
+              <router-link class="router_sty" v-if="i.path" :to="i.path">{{i.name}}</router-link>
+              <a class="router_sty" v-if="!i.path" :href="i.address" target="_blank">{{i.name}}</a>
             </dt>
           </dl>
         </li>
@@ -68,10 +69,11 @@
             data-toggle="collapse"
             data-target="#menu"
           >
-            <router-link :to="item.path">
+            <router-link v-if ="item.path" :to="item.path">
               {{item.name}}
               <i class="underline"></i>
             </router-link>
+            <a v-if ="!item.path"  :href="item.address">{{item.name}} ss</a>
           </li>
         </ul>
       </div>
@@ -131,7 +133,23 @@ export default {
           name: "联系我们",
           path: "/contactus",
           children: []
-        }
+        },
+           {
+          name: "旗下公司",
+           path: "/software",
+          children: [
+            {
+              name: "华软智能",
+              path: '',
+              address: "https://www.baidu.com/"
+            },
+            {
+              name: "二四优递",
+              path: '',
+              address: "http://192.168.1.179:8889/home/"
+            }
+          ]
+        },
       ]
     };
   },
@@ -160,6 +178,7 @@ export default {
       })
     },
     navClick(index, name) {
+      console.log(index,name)
 
       const params = {
         state: 1 || ''
@@ -258,7 +277,7 @@ export default {
   height: 2px;
   opacity: 0;
   transition: all 0.6s ease;
-  background-color: #1e73be;
+  background-color: #6d45fd;
 }
 /* 导航栏 每个导航下面的 a 链接的右侧小三角 */
 #header .header-nav .header-nav-wrapper > li > a > span {
@@ -267,7 +286,7 @@ export default {
 }
 /* 导航栏 每个导航下面的 a 链接 鼠标滑上去的样式 */
 #header .header-nav .header-nav-wrapper > li > a:hover {
-  color: #1e73be;
+  color: #6d45fd;
   text-decoration: none;
 }
 /* 导航栏 每个导航下面的 a 链接 鼠标滑上去下划线的样式 */
@@ -282,9 +301,9 @@ export default {
 }
 /* 导航栏 每个导航下面的 a 链接 鼠标点击后的样式 */
 #header .header-nav .header-nav-wrapper > li.active > a {
-  color: #1e73be;
+  color: #6d45fd;
   text-decoration: none;
-  border-bottom: 2px solid #1e73be;
+  border-bottom: 2px solid #6d45fd;
 }
 /* 导航栏 每个导航下面的二级导航容器 */
 #header .header-nav .header-nav-wrapper > li > dl {
@@ -383,5 +402,8 @@ export default {
   #header .header-nav .header-nav-wrapper > li > a > span {
     font-size: 10px;
   }
+}
+.router_sty{
+  color: #6d45fd;
 }
 </style>
